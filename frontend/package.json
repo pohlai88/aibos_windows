@@ -1,0 +1,33 @@
+{
+  "name": "aibos-hybrid-windows",
+  "version": "1.0.0",
+  "description": "AIBOS Hybrid Windows Platform",
+  "type": "module",
+  "scripts": {
+    "dev": "deno run --allow-all --watch --no-check main.ts",
+    "build": "deno run --allow-all main.ts",
+    "frontend:build": "vite build"
+  },
+  "keywords": [
+    "aibos",
+    "deno",
+    "react",
+    "supabase"
+  ],
+  "author": "AIBOS Team",
+  "license": "MIT",
+  "dependencies": {
+    "build": "^0.1.4",
+    "histoire": "^1.0.0-alpha.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "main": "tailwind.config.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
+    "vite": "^6.3.5"
+  }
+}

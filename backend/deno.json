@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "exactOptionalPropertyTypes": true,
+    "noPropertyAccessFromIndexSignature": true
+  },
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@18.2.0/jsx-dev-runtime",
+    "framer-motion": "https://esm.sh/framer-motion@10.16.4",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.38.4",
+    "react-rnd": "https://esm.sh/react-rnd@10.4.1",
+    "zustand": "https://esm.sh/zustand@4.4.7"
+  },
+  "tasks": {
+    "dev": "deno run --allow-all --watch --no-check main.ts",
+    "build": "deno run --allow-all scripts/build-production.ts",
+    "optimize": "deno run --allow-all scripts/optimize.ts",
+    "analyze": "deno run --allow-all scripts/bundle-analyzer.ts"
+  },
+  "deploy": {
+    "project": "9b4fb199-9b0d-4a38-86be-cb36719093aa",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [],
+    "entrypoint": "main.ts"
+  }
+}
