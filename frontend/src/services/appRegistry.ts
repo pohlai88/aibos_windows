@@ -307,4 +307,10 @@ class AppRegistryService {
       this.logger.info(`App launched: ${app.title} (${id})`, { component: 'AppRegistry', action: 'launchApp', metadata: { appId: id } });
       return true;
     } catch (error) {
-      this.logger.error(`
+      this.logger.error(`Failed to launch app: ${app?.title ?? id} (${id}) - ${error}`, { component: 'AppRegistry', action: 'launchApp', metadata: { appId: id } });
+      return false;
+    }
+  }
+}
+
+export const appRegistry = new AppRegistryService();
