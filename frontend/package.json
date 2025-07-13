@@ -4,9 +4,9 @@
   "description": "AIBOS Hybrid Windows Platform",
   "type": "module",
   "scripts": {
-    "dev": "deno run --allow-all --watch --no-check main.ts",
-    "build": "deno run --allow-all main.ts",
-    "frontend:build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [
     "aibos",
